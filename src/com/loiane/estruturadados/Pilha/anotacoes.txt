@@ -1,0 +1,11 @@
+	PILHA - LIFO
+	
+	[5] topo da pilha
+	[4]
+	[3]
+	[2]
+	[1]
+	[0] base da pilha
+	
+	Para empilhar um elemento no topo da pilha - push
+	Para eliminar um elemento no topo da pilha - pop
