@@ -1,6 +1,6 @@
 package com.loiane.estruturadados.vetor;
 
-import com.loiane.estruturadados.Pilha.base.EstruturaEstatica;
+import com.loiane.estruturadados.base.EstruturaEstatica;
 
 public class Lista2<T> extends EstruturaEstatica<T> {
 

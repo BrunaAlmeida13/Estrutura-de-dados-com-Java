@@ -6,7 +6,7 @@ public class Aula13 {
 
 	public static void main(String[] args) {
 		
-		Pilha<Integer> pilha = new Pilha<>();
+		Pilha<Integer> pilha = new Pilha();
 		
 		System.out.println(pilha); //toString()
 		

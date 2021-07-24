@@ -1,4 +1,4 @@
-package com.loiane.estruturadados.Pilha.base;
+package com.loiane.estruturadados.base;
 
 public class EstruturaEstatica<T> {
 
@@ -49,7 +49,7 @@ public class EstruturaEstatica<T> {
 	
 	protected void remove(int posicao){
 		if (!(posicao >= 0 && posicao < tamanho)){
-			throw new IllegalArgumentException("Posicao invaÌlida");
+			throw new IllegalArgumentException("Posicao invaÌ?lida");
 		}
 		for (int i=posicao; i<tamanho-1; i++){
 			elementos[i] = elementos[i+1];
