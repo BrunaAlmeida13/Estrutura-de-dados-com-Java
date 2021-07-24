@@ -1,18 +1,18 @@
 package com.loiane.estruturadados.base;
 
+@SuppressWarnings("unchecked")
 public class EstruturaEstatica<T> {
 
 	protected T[] elementos; 
 	protected int tamanho;
 
-	@SuppressWarnings("unchecked")
 	public EstruturaEstatica(int capacidade){
 		this.elementos = (T[]) new Object[capacidade]; //solução do livro effective Java
 		this.tamanho = 0;
 	}
 
 	public EstruturaEstatica(){
-		this(10);
+		this(10); //passadno a capacidade 10
 	}
 	
 	public boolean estaVazia(){
@@ -20,6 +20,7 @@ public class EstruturaEstatica<T> {
 	}
 
 	protected boolean adiciona(T elemento) {
+		//o código ta sendo reaproveitado por Lista2 e Pilha
 		this.aumentaCapacidade();
 		if (this.tamanho < this.elementos.length){
 			this.elementos[this.tamanho] = elemento;
@@ -49,7 +50,7 @@ public class EstruturaEstatica<T> {
 	
 	protected void remove(int posicao){
 		if (!(posicao >= 0 && posicao < tamanho)){
-			throw new IllegalArgumentException("Posicao inva�?lida");
+			throw new IllegalArgumentException("Posicao inva�?lida");
 		}
 		for (int i=posicao; i<tamanho-1; i++){
 			elementos[i] = elementos[i+1];
@@ -57,7 +58,7 @@ public class EstruturaEstatica<T> {
 		tamanho--;
 	}
 
-	@SuppressWarnings("unchecked")
+	
 	private void aumentaCapacidade(){
 		if (this.tamanho == this.elementos.length){
 			T[] elementosNovos = (T[]) new Object[this.elementos.length * 2];

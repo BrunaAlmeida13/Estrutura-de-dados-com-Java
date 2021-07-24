@@ -4,40 +4,39 @@ import com.loiane.estruturadados.base.EstruturaEstatica;
 
 public class Pilha<T> extends EstruturaEstatica<T> {
 	
-	private T[] elementos;
-	private int tamanho;
+	//As variáveis elemento e tamanho estão vindo da suoer(), onde estão como protected
+	
+	public Pilha() {
+		super();
+	}
 	
 	public Pilha(int capacidade) {
-		//instanciando arrays passando um tipo genérico
-		elementos = (T[]) new Object[capacidade];
-		tamanho = 0;
+		super(capacidade);
 	}
 	
 	public void empilha(T elemento) {
-		
-	}
-	
-	public void aumentaCapacidade() {
-		
-	}
-	
-	public boolean estaVazia() {
-		return false;
-	}
-	
-	public T topo() {
-		return null;
+		super.adiciona(elemento);
 	}
 	
 	public T desempilha() {
-		return null;
+		if(this.estaVazia())
+			return null;
+		
+		return this.elementos[--tamanho];
+		
+		/*T elemento = this.elementos[tamanho - 1];
+		tamanho--;
+		return elemento;)*/
 	}
 	
-	public int tamanho() {
-		return 0;
+	public boolean estaVazia() {
+		return super.estaVazia();
 	}
 	
-	public String toString() {
-		return null;
+	public T topo() { //retornará o tipo da pilha Ex. String, Contato, Integer
+		if(this.estaVazia()) {
+			return null;
+		}
+		return this.elementos[tamanho - 1];
 	}
 }

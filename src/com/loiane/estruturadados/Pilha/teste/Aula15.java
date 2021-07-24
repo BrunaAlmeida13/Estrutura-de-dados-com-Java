@@ -2,15 +2,16 @@ package com.loiane.estruturadados.Pilha.teste;
 
 import com.loiane.estruturadados.Pilha.Pilha;
 
-public class Aula13 {
+public class Aula15 {
 
 	public static void main(String[] args) {
-		
 		Pilha<Integer> pilha = new Pilha<Integer>();
 		
-		System.out.println("Elementos: " + pilha); //toString()
+		System.out.println("Está vazia? " + pilha.estaVazia());
 		
-		System.out.println("Tamanho: " + pilha.tamanho());
+		pilha.empilha(25);
+		
+		System.out.println("Está vazia? " + pilha.estaVazia());
 	}
 
 }
