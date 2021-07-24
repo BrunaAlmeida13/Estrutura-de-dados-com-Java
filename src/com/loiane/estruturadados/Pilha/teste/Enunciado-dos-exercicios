@@ -1,0 +1,24 @@
+Exercício 01
+Escreva um programa que leia 10 números. Para cada número lido, verifique e codifique de
+acordo com as regras a seguir:
+- Se um número for par, empilhe na pilha;
+- Se o número for ímpar, desempilhe um número da pilha. Caso a pilha esteja vazia, mostre 
+a mensagem
+- Se ao final do programa a pilha não estiver vazia, desempilhe todos os elementos,
+imprimindo-os na tela.
+
+Exercício 02
+Escreva um programa que leia 10 números. Para cada número lido, verifique e codifique de
+acordo com as regras a seguir:
+- Se o número for par, empilhe na pilha chamada par;
+- Se o número for ímpar, empilhe na pilha chamada ímpar;
+- Seo número for zero, desempilhe um elemento de cada pilha. Caso alguma pilha esteja vazia, mostre
+uma mensagem de erro na tela.
+Ao final do programa desempilhe todos os elementos das duas pilhas, imprimindo-os na tela
+
+Exercício 03
+Utilize a classe Pilha (criada durante as aulas) e desenvolva os seguintes items:
+- Crie uma pilha com capacidade para 20 livros;
+- Insira 6 livros na pilha. Cada livro contém nome, isbn (número único do livro no mundo), ano de 
+lançamento e autor.
+- Crie um exemplo para utilizar cada método da classe Pilha.

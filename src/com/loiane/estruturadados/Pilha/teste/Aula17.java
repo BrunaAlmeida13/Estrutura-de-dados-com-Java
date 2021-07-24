@@ -9,7 +9,7 @@ public class Aula17 {
 		
 		pilha.empilha(12);
 		pilha.empilha(10);
-		pilha.empilha(8);
+		pilha.empilha(8); //topo da pilha, é o final da pilha
 		
 		System.out.println("Elementos: " + pilha);
 		
