@@ -1,11 +1,12 @@
 package com.loiane.estruturadados.Pilha.teste;
 
-import com.loiane.estruturadados.Pilha.Pilha;
+import java.util.Stack;
 
-public class Exercicio03 {
+public class Exercicio04 {
 
 	public static void main(String[] args) {
-		Pilha<Livro> pilha = new Pilha<Livro>(20);
+		//É uma classe de pilha dinâmica, e não tem limite de capacidade
+		Stack<Livro> pilha = new Stack<Livro>();
 		
 		Livro livro1 = new Livro();
 		livro1.setNome("Learning JavaScript Data Structures and Algorithms - Second Edition");
@@ -31,28 +32,29 @@ public class Exercicio03 {
 		livro4.setAnoLancamento(2015);
 		livro4.setIsbn("B00YHBVHGO");
 		
-		System.out.println("Pilha de livros criada.\nPilha vazia? " + pilha.estaVazia());
+		System.out.println("Pilha de livros criada.\nPilha vazia? " + pilha.isEmpty());
 		
 		System.out.println("Empilhando livros na pilha..");
 		
-		pilha.empilha(livro1);
-		pilha.empilha(livro2);
-		pilha.empilha(livro3);
-		pilha.empilha(livro4);
+		pilha.push(livro1);
+		pilha.push(livro2);
+		pilha.push(livro3);
+		pilha.push(livro4);
 		
-		System.out.println(pilha.tamanho() + " livros foram empilhados");
+		System.out.println(pilha.size() + " livros foram empilhados");
 		System.out.println();
 		System.out.println(pilha);
 		
-		System.out.println("\nTopo da pilha: " + pilha.topo() + "\n");
+		System.out.println("\nTopo da pilha: " + pilha.peek() + "\n");
 		
 		System.out.println();
 		System.out.println("Desempilhando livros da pilha");
 		
-		while(!pilha.estaVazia()) {
-			System.out.println("Desempilhando livro: " + pilha.desempilha());
+		while(!pilha.isEmpty()) {
+			System.out.println("Desempilhando livro: " + pilha.pop());
 		}
-		System.out.println("Todos os livros foram desempilhados!\n Pilha vazia? " + pilha.estaVazia());
+		System.out.println("Todos os livros foram desempilhados!\n Pilha vazia? " + pilha.isEmpty());
+
 	}
 
 }

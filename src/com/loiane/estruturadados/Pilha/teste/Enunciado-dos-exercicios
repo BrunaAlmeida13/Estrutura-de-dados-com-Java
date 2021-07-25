@@ -22,3 +22,29 @@ Utilize a classe Pilha (criada durante as aulas) e desenvolva os seguintes items
 - Insira 6 livros na pilha. Cada livro contém nome, isbn (número único do livro no mundo), ano de 
 lançamento e autor.
 - Crie um exemplo para utilizar cada método da classe Pilha.
+
+Execício 04
+Refazer o mesmo do exercício 3, mas usando a classe da API Java - Stack
+
+Exercicio 05
+Escreva um programa que testa se uma sequência de caracteres fornecida pelo usuário pe um palíndromo, ou
+seja, é uma palavra cuja primeira metade é simétrica à segunda metade. Veja alguns exemplos:
+- AABCCBAA - sim
+- ABFFBB - não
+
+Exercicio 06
+Escreva um programa para verificar se uma expressão matemática tem os parênteses agrupados de forma
+correta, isto é:
+(1) se o número de parênteses à esquerda e à direita são iguais e;
+(2) se todo parêntese aberto é seguido posteriormente por um fechamento de parêntese
+
+Ex.: 
+-> )A+B(-C ou (A+B))-(C+D  | viola a condição 2
+-> ((A+B)+D) | está correta
+
+Exercicio 07
+Usando a classe Pilha ou Stack, desenvolva um algoritmo que faça a conversão de números decimais para
+binário.
+
+Exercicio 08
+Usando a classe Pilha ou Stack, desenvolva um algoritmo que resolva o quebra cabeça Torre de Hanoi.
